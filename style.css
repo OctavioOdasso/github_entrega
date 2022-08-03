@@ -33,9 +33,14 @@ header, section, footer {
     list-style: none;
     font-size: 1.5rem;
     font-family: monospace;
- 
+    
 }
 
+.lista > li {
+    height: 1.5rem;
+    transition: height 0.5s;
+    background-color: rgb(91, 99, 96);
+}
  
 .sub__lista {
     display: none;
@@ -47,17 +52,35 @@ header, section, footer {
     color: black;
     list-style: none;
     text-decoration: none;
- 
+    background-color: rgb(91, 99, 96);
 }
  
 .lista > li:hover .sub__lista {
     display: block;
+    transition: 0.5s;
 }
  
+.lista > li:hover {
+    height: 6rem;
+}
+
 .container {
     height: 40rem;
 }
  
 .pie {
     height: 8rem;
+}
+
+.logo {
+
+}
+
+.mini__logo {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-duration: var(--animate-duration);
+    animation-duration: var(--animate-duration);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
