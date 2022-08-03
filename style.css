@@ -23,7 +23,11 @@ header, section, footer {
     position: relative;
     margin: auto;
 }
- 
+
+.menu {
+    margin-top: 3rem;
+}
+
 .lista {
     display: flex;
     list-style: none;
@@ -31,6 +35,7 @@ header, section, footer {
     font-family: monospace;
  
 }
+
  
 .sub__lista {
     display: none;
@@ -40,6 +45,8 @@ header, section, footer {
 .sub__lista a {
     font-style: none;
     color: black;
+    list-style: none;
+    text-decoration: none;
  
 }
  
